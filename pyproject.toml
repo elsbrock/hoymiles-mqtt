@@ -23,6 +23,10 @@ packages = [
     { include = "tests", format = "sdist" },
 ]
 
+[tool.poetry.scripts]
+poetry = 'poetry.console:run'
+hoymiles_mqtt = "hoymiles_mqtt.__main__:main"
+
 [tool.poetry.dependencies]
 python = ">=3.8,<3.12"
 
